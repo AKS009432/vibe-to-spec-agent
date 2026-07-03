@@ -202,3 +202,8 @@ my_env.tfvars
 
 # A2A Inspector
 tools/a2a-inspector/
+SCAN_REPORT.md 
+"environemnt setup.txt" 
+events_debug.txt 
+app/agent_original_backup.py 
+audit_reports/ 

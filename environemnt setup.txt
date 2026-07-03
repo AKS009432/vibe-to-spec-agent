@@ -1,7 +1,0 @@
-set OPENAI_API_KEY=Yourkey
-
-
-set GITHUB_TOKEN=yourkey
-
-
-
