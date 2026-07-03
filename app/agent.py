@@ -319,8 +319,8 @@ if os.environ.get("GOOGLE_API_KEY"):
     except Exception as e:
         print("[Model Selection] Failed to patch BaseApiClient:", e)
 
-    # Allow custom Gemini model name override, default to gemini-1.5-flash (widely supported free-tier model)
-    gemini_model = os.environ.get("GEMINI_MODEL", "gemini-1.5-flash")
+    # Allow custom Gemini model name override, default to gemini-2.5-flash (modern stable model)
+    gemini_model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
     selected_model = Gemini(model=gemini_model)
     print(f"[Model] Gemini model initialized: {gemini_model}")
 else:
@@ -359,10 +359,12 @@ github_tool_source = DualToolSource(mcp_toolset, read_github_repo)
 # ── Root Agent ────────────────────────────────────────────────────────────────
 
 root_agent = Agent(
-    name="app",
+    name="AKS009432",
     model=selected_model,
     description="Audits vibe-coded agents. Generates a living spec, gap report, and eval rubric.",
     instruction="""IMPORTANT: If the user's message starts with or contains the words 'deep audit', 'deep scan', or 'full audit', ALWAYS use MODE 2 regardless of whether a URL is present. Check for these keywords FIRST before checking for URLs.
+
+CRITICAL RULE FOR TOOL EXECUTION: You MUST execute tool calls sequentially. NEVER call save_report() or save_deep_audit_report() in the same turn as read_github_repo() or read_project(). You must first call read_github_repo() or read_project(), wait for the execution results to load the codebase files into your history, perform your analysis, and then call save_report() or save_deep_audit_report() in a subsequent separate turn with the fully generated content.
 
 You are the Vibe-to-Spec Agent. Analyze the user's input to automatically determine the audit mode:
 
@@ -401,5 +403,5 @@ Never skip the interview in Deep Audit mode. Never mark risk tier as LOW if a cr
 
 app = App(
     root_agent=root_agent,
-    name="app",
+    name="AKS009432",
 )
