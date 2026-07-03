@@ -1,0 +1,751 @@
+Number of events: 9
+
+--- Event 0: <class 'google.adk.events.event.Event'> ---
+  content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'input': 'Please run deep audit on my agent'
+    },
+    id='call_read_project',
+    name='read_project'
+  )
+)] role='model'
+  finish_reason: FinishReason.STOP
+  long_running_tool_ids: set()
+    actions: skip_summarization=None state_delta={} artifact_delta={} transfer_to_agent=None escalate=None requested_auth_configs={} requested_tool_confirmations={} compaction=None end_of_agent=None agent_state=None rewind_before_invocation_id=None route=None render_ui_widgets=None set_model_response=None
+    author: app
+    avg_logprobs: None
+    branch: None
+    cache_metadata: None
+    citation_metadata: None
+    content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'input': 'Please run deep audit on my agent'
+    },
+    id='call_read_project',
+    name='read_project'
+  )
+)] role='model'
+    custom_metadata: None
+    error_code: None
+    error_message: None
+    finish_reason: FinishReason.STOP
+    go_away: None
+    grounding_metadata: None
+    id: 4bbd2dff-5ac0-47a4-b3a2-74165d9f62ce
+    input_transcription: None
+    interaction_id: None
+    interrupted: None
+    invocation_id: e-5767a39d-3f89-4cb4-be50-1643d8c7ba94
+    isolation_scope: None
+    live_session_id: None
+    live_session_resumption_update: None
+    logprobs_result: None
+    long_running_tool_ids: set()
+    message: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'input': 'Please run deep audit on my agent'
+    },
+    id='call_read_project',
+    name='read_project'
+  )
+)] role='model'
+    model_computed_fields: {}
+    model_config: {'extra': 'ignore', 'alias_generator': <function to_camel at 0x0000024EDF3C1800>, 'populate_by_name': True, 'validate_by_alias': True, 'validate_by_name': True, 'ser_json_bytes': 'base64', 'val_json_bytes': 'base64'}
+    model_extra: None
+    model_fields: {'model_version': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='modelVersion', alias_priority=1), 'content': FieldInfo(annotation=Union[Content, NoneType], required=False, default=None, alias='content', alias_priority=1), 'grounding_metadata': FieldInfo(annotation=Union[GroundingMetadata, NoneType], required=False, default=None, alias='groundingMetadata', alias_priority=1), 'partial': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='partial', alias_priority=1), 'turn_complete': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='turnComplete', alias_priority=1), 'finish_reason': FieldInfo(annotation=Union[FinishReason, NoneType], required=False, default=None, alias='finishReason', alias_priority=1), 'error_code': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorCode', alias_priority=1), 'error_message': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorMessage', alias_priority=1), 'interrupted': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='interrupted', alias_priority=1), 'custom_metadata': FieldInfo(annotation=Union[dict[str, Any], NoneType], required=False, default=None, alias='customMetadata', alias_priority=1), 'usage_metadata': FieldInfo(annotation=Union[GenerateContentResponseUsageMetadata, NoneType], required=False, default=None, alias='usageMetadata', alias_priority=1), 'live_session_resumption_update': FieldInfo(annotation=Union[LiveServerSessionResumptionUpdate, NoneType], required=False, default=None, alias='liveSessionResumptionUpdate', alias_priority=1), 'live_session_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='liveSessionId', alias_priority=1), 'go_away': FieldInfo(annotation=Union[LiveServerGoAway, NoneType], required=False, default=None, alias='goAway', alias_priority=1), 'input_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='inputTranscription', alias_priority=1), 'output_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='outputTranscription', alias_priority=1), 'avg_logprobs': FieldInfo(annotation=Union[float, NoneType], required=False, default=None, alias='avgLogprobs', alias_priority=1), 'logprobs_result': FieldInfo(annotation=Union[LogprobsResult, NoneType], required=False, default=None, alias='logprobsResult', alias_priority=1), 'cache_metadata': FieldInfo(annotation=Union[CacheMetadata, NoneType], required=False, default=None, alias='cacheMetadata', alias_priority=1), 'citation_metadata': FieldInfo(annotation=Union[CitationMetadata, NoneType], required=False, default=None, alias='citationMetadata', alias_priority=1), 'interaction_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='interactionId', alias_priority=1), 'invocation_id': FieldInfo(annotation=str, required=False, default='', alias='invocationId', alias_priority=1), 'author': FieldInfo(annotation=str, required=False, default='', alias='author', alias_priority=1), 'actions': FieldInfo(annotation=EventActions, required=False, default_factory=EventActions, alias='actions', alias_priority=1), 'output': FieldInfo(annotation=Union[Any, NoneType], required=False, default=None, alias='output', alias_priority=1), 'node_info': FieldInfo(annotation=NodeInfo, required=False, default_factory=NodeInfo, alias='nodeInfo', alias_priority=1), 'long_running_tool_ids': FieldInfo(annotation=Union[set[str], NoneType], required=False, default=None, alias='longRunningToolIds', alias_priority=1), 'branch': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='branch', alias_priority=1), 'isolation_scope': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='isolationScope', alias_priority=1), 'id': FieldInfo(annotation=str, required=False, default='', alias='id', alias_priority=1), 'timestamp': FieldInfo(annotation=float, required=False, default_factory=<lambda>, alias='timestamp', alias_priority=1)}
+    model_fields_set: {'content', 'actions', 'long_running_tool_ids', 'invocation_id', 'author', 'partial', 'timestamp', 'finish_reason', 'id', 'branch', 'node_info'}
+    model_version: None
+    node_info: path='app@1' output_for=None message_as_output=None
+    node_name: app
+    output: None
+    output_transcription: None
+    partial: False
+    timestamp: 1782983635.9849536
+    turn_complete: None
+    usage_metadata: None
+
+--- Event 1: <class 'google.adk.events.event.Event'> ---
+  content: parts=[Part(
+  function_response=FunctionResponse(
+    id='call_read_project',
+    name='read_project',
+    response={
+      'result': """PROJECT INPUT RECEIVED:
+Please run deep audit on my agent
+
+[Code Reader Analysis]
+- Input type: Description
+- Content: Please run deep audit on my agent...
+- Status: Ready for intent interview
+"""
+    }
+  )
+)] role='user'
+  finish_reason: None
+  long_running_tool_ids: None
+    actions: skip_summarization=None state_delta={} artifact_delta={} transfer_to_agent=None escalate=None requested_auth_configs={} requested_tool_confirmations={} compaction=None end_of_agent=None agent_state=None rewind_before_invocation_id=None route=None render_ui_widgets=None set_model_response=None
+    author: app
+    avg_logprobs: None
+    branch: None
+    cache_metadata: None
+    citation_metadata: None
+    content: parts=[Part(
+  function_response=FunctionResponse(
+    id='call_read_project',
+    name='read_project',
+    response={
+      'result': """PROJECT INPUT RECEIVED:
+Please run deep audit on my agent
+
+[Code Reader Analysis]
+- Input type: Description
+- Content: Please run deep audit on my agent...
+- Status: Ready for intent interview
+"""
+    }
+  )
+)] role='user'
+    custom_metadata: None
+    error_code: None
+    error_message: None
+    finish_reason: None
+    go_away: None
+    grounding_metadata: None
+    id: 595a0175-8b99-4dfd-8b65-326e53eff37a
+    input_transcription: None
+    interaction_id: None
+    interrupted: None
+    invocation_id: e-5767a39d-3f89-4cb4-be50-1643d8c7ba94
+    isolation_scope: None
+    live_session_id: None
+    live_session_resumption_update: None
+    logprobs_result: None
+    long_running_tool_ids: None
+    message: parts=[Part(
+  function_response=FunctionResponse(
+    id='call_read_project',
+    name='read_project',
+    response={
+      'result': """PROJECT INPUT RECEIVED:
+Please run deep audit on my agent
+
+[Code Reader Analysis]
+- Input type: Description
+- Content: Please run deep audit on my agent...
+- Status: Ready for intent interview
+"""
+    }
+  )
+)] role='user'
+    model_computed_fields: {}
+    model_config: {'extra': 'ignore', 'alias_generator': <function to_camel at 0x0000024EDF3C1800>, 'populate_by_name': True, 'validate_by_alias': True, 'validate_by_name': True, 'ser_json_bytes': 'base64', 'val_json_bytes': 'base64'}
+    model_extra: None
+    model_fields: {'model_version': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='modelVersion', alias_priority=1), 'content': FieldInfo(annotation=Union[Content, NoneType], required=False, default=None, alias='content', alias_priority=1), 'grounding_metadata': FieldInfo(annotation=Union[GroundingMetadata, NoneType], required=False, default=None, alias='groundingMetadata', alias_priority=1), 'partial': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='partial', alias_priority=1), 'turn_complete': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='turnComplete', alias_priority=1), 'finish_reason': FieldInfo(annotation=Union[FinishReason, NoneType], required=False, default=None, alias='finishReason', alias_priority=1), 'error_code': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorCode', alias_priority=1), 'error_message': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorMessage', alias_priority=1), 'interrupted': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='interrupted', alias_priority=1), 'custom_metadata': FieldInfo(annotation=Union[dict[str, Any], NoneType], required=False, default=None, alias='customMetadata', alias_priority=1), 'usage_metadata': FieldInfo(annotation=Union[GenerateContentResponseUsageMetadata, NoneType], required=False, default=None, alias='usageMetadata', alias_priority=1), 'live_session_resumption_update': FieldInfo(annotation=Union[LiveServerSessionResumptionUpdate, NoneType], required=False, default=None, alias='liveSessionResumptionUpdate', alias_priority=1), 'live_session_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='liveSessionId', alias_priority=1), 'go_away': FieldInfo(annotation=Union[LiveServerGoAway, NoneType], required=False, default=None, alias='goAway', alias_priority=1), 'input_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='inputTranscription', alias_priority=1), 'output_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='outputTranscription', alias_priority=1), 'avg_logprobs': FieldInfo(annotation=Union[float, NoneType], required=False, default=None, alias='avgLogprobs', alias_priority=1), 'logprobs_result': FieldInfo(annotation=Union[LogprobsResult, NoneType], required=False, default=None, alias='logprobsResult', alias_priority=1), 'cache_metadata': FieldInfo(annotation=Union[CacheMetadata, NoneType], required=False, default=None, alias='cacheMetadata', alias_priority=1), 'citation_metadata': FieldInfo(annotation=Union[CitationMetadata, NoneType], required=False, default=None, alias='citationMetadata', alias_priority=1), 'interaction_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='interactionId', alias_priority=1), 'invocation_id': FieldInfo(annotation=str, required=False, default='', alias='invocationId', alias_priority=1), 'author': FieldInfo(annotation=str, required=False, default='', alias='author', alias_priority=1), 'actions': FieldInfo(annotation=EventActions, required=False, default_factory=EventActions, alias='actions', alias_priority=1), 'output': FieldInfo(annotation=Union[Any, NoneType], required=False, default=None, alias='output', alias_priority=1), 'node_info': FieldInfo(annotation=NodeInfo, required=False, default_factory=NodeInfo, alias='nodeInfo', alias_priority=1), 'long_running_tool_ids': FieldInfo(annotation=Union[set[str], NoneType], required=False, default=None, alias='longRunningToolIds', alias_priority=1), 'branch': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='branch', alias_priority=1), 'isolation_scope': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='isolationScope', alias_priority=1), 'id': FieldInfo(annotation=str, required=False, default='', alias='id', alias_priority=1), 'timestamp': FieldInfo(annotation=float, required=False, default_factory=<lambda>, alias='timestamp', alias_priority=1)}
+    model_fields_set: {'content', 'actions', 'invocation_id', 'author', 'branch', 'id'}
+    model_version: None
+    node_info: path='app@1' output_for=None message_as_output=None
+    node_name: app
+    output: None
+    output_transcription: None
+    partial: None
+    timestamp: 1782983636.002475
+    turn_complete: None
+    usage_metadata: None
+
+--- Event 2: <class 'google.adk.events.event.Event'> ---
+  content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'project_summary': 'Summary of agent'
+    },
+    id='call_interview',
+    name='request_intent_interview'
+  )
+)] role='model'
+  finish_reason: FinishReason.STOP
+  long_running_tool_ids: {'call_interview'}
+    actions: skip_summarization=None state_delta={} artifact_delta={} transfer_to_agent=None escalate=None requested_auth_configs={} requested_tool_confirmations={} compaction=None end_of_agent=None agent_state=None rewind_before_invocation_id=None route=None render_ui_widgets=None set_model_response=None
+    author: app
+    avg_logprobs: None
+    branch: None
+    cache_metadata: None
+    citation_metadata: None
+    content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'project_summary': 'Summary of agent'
+    },
+    id='call_interview',
+    name='request_intent_interview'
+  )
+)] role='model'
+    custom_metadata: None
+    error_code: None
+    error_message: None
+    finish_reason: FinishReason.STOP
+    go_away: None
+    grounding_metadata: None
+    id: d9d8d511-9693-4d52-b95a-8230fd9919fb
+    input_transcription: None
+    interaction_id: None
+    interrupted: None
+    invocation_id: e-5767a39d-3f89-4cb4-be50-1643d8c7ba94
+    isolation_scope: None
+    live_session_id: None
+    live_session_resumption_update: None
+    logprobs_result: None
+    long_running_tool_ids: {'call_interview'}
+    message: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'project_summary': 'Summary of agent'
+    },
+    id='call_interview',
+    name='request_intent_interview'
+  )
+)] role='model'
+    model_computed_fields: {}
+    model_config: {'extra': 'ignore', 'alias_generator': <function to_camel at 0x0000024EDF3C1800>, 'populate_by_name': True, 'validate_by_alias': True, 'validate_by_name': True, 'ser_json_bytes': 'base64', 'val_json_bytes': 'base64'}
+    model_extra: None
+    model_fields: {'model_version': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='modelVersion', alias_priority=1), 'content': FieldInfo(annotation=Union[Content, NoneType], required=False, default=None, alias='content', alias_priority=1), 'grounding_metadata': FieldInfo(annotation=Union[GroundingMetadata, NoneType], required=False, default=None, alias='groundingMetadata', alias_priority=1), 'partial': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='partial', alias_priority=1), 'turn_complete': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='turnComplete', alias_priority=1), 'finish_reason': FieldInfo(annotation=Union[FinishReason, NoneType], required=False, default=None, alias='finishReason', alias_priority=1), 'error_code': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorCode', alias_priority=1), 'error_message': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorMessage', alias_priority=1), 'interrupted': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='interrupted', alias_priority=1), 'custom_metadata': FieldInfo(annotation=Union[dict[str, Any], NoneType], required=False, default=None, alias='customMetadata', alias_priority=1), 'usage_metadata': FieldInfo(annotation=Union[GenerateContentResponseUsageMetadata, NoneType], required=False, default=None, alias='usageMetadata', alias_priority=1), 'live_session_resumption_update': FieldInfo(annotation=Union[LiveServerSessionResumptionUpdate, NoneType], required=False, default=None, alias='liveSessionResumptionUpdate', alias_priority=1), 'live_session_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='liveSessionId', alias_priority=1), 'go_away': FieldInfo(annotation=Union[LiveServerGoAway, NoneType], required=False, default=None, alias='goAway', alias_priority=1), 'input_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='inputTranscription', alias_priority=1), 'output_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='outputTranscription', alias_priority=1), 'avg_logprobs': FieldInfo(annotation=Union[float, NoneType], required=False, default=None, alias='avgLogprobs', alias_priority=1), 'logprobs_result': FieldInfo(annotation=Union[LogprobsResult, NoneType], required=False, default=None, alias='logprobsResult', alias_priority=1), 'cache_metadata': FieldInfo(annotation=Union[CacheMetadata, NoneType], required=False, default=None, alias='cacheMetadata', alias_priority=1), 'citation_metadata': FieldInfo(annotation=Union[CitationMetadata, NoneType], required=False, default=None, alias='citationMetadata', alias_priority=1), 'interaction_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='interactionId', alias_priority=1), 'invocation_id': FieldInfo(annotation=str, required=False, default='', alias='invocationId', alias_priority=1), 'author': FieldInfo(annotation=str, required=False, default='', alias='author', alias_priority=1), 'actions': FieldInfo(annotation=EventActions, required=False, default_factory=EventActions, alias='actions', alias_priority=1), 'output': FieldInfo(annotation=Union[Any, NoneType], required=False, default=None, alias='output', alias_priority=1), 'node_info': FieldInfo(annotation=NodeInfo, required=False, default_factory=NodeInfo, alias='nodeInfo', alias_priority=1), 'long_running_tool_ids': FieldInfo(annotation=Union[set[str], NoneType], required=False, default=None, alias='longRunningToolIds', alias_priority=1), 'branch': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='branch', alias_priority=1), 'isolation_scope': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='isolationScope', alias_priority=1), 'id': FieldInfo(annotation=str, required=False, default='', alias='id', alias_priority=1), 'timestamp': FieldInfo(annotation=float, required=False, default_factory=<lambda>, alias='timestamp', alias_priority=1)}
+    model_fields_set: {'content', 'actions', 'long_running_tool_ids', 'invocation_id', 'author', 'partial', 'timestamp', 'finish_reason', 'id', 'branch', 'node_info'}
+    model_version: None
+    node_info: path='app@1' output_for=None message_as_output=None
+    node_name: app
+    output: None
+    output_transcription: None
+    partial: False
+    timestamp: 1782983636.0119548
+    turn_complete: None
+    usage_metadata: None
+
+--- Event 3: <class 'google.adk.events.event.Event'> ---
+  content: parts=[Part(
+  function_response=FunctionResponse(
+    id='call_interview',
+    name='request_intent_interview',
+    response={
+      'message': """
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  INTENT INTERVIEW — Human-in-the-Loop Gate
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+I've analysed your project. Now I need your intent.
+Please answer all 5 questions:
+
+Q1. GOAL: What did you want this agent to achieve?
+
+Q2. AUDIENCE: Who will use this?
+    (developer / end-user / enterprise team)
+
+Q3. CRITICAL ACTION: What is the most dangerous
+    thing this agent can do?
+
+Q4. SUCCESS: How do you define success for this agent?
+
+Q5. KNOWN GAPS: What do you already know is
+    missing or broken?
+
+Reply in this exact format:
+A1: ...
+A2: ...
+A3: ...
+A4: ...
+A5: ...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+""",
+      'status': 'pending'
+    }
+  )
+)] role='user'
+  finish_reason: None
+  long_running_tool_ids: None
+    actions: skip_summarization=None state_delta={} artifact_delta={} transfer_to_agent=None escalate=None requested_auth_configs={} requested_tool_confirmations={} compaction=None end_of_agent=None agent_state=None rewind_before_invocation_id=None route=None render_ui_widgets=None set_model_response=None
+    author: app
+    avg_logprobs: None
+    branch: None
+    cache_metadata: None
+    citation_metadata: None
+    content: parts=[Part(
+  function_response=FunctionResponse(
+    id='call_interview',
+    name='request_intent_interview',
+    response={
+      'message': """
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  INTENT INTERVIEW — Human-in-the-Loop Gate
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+I've analysed your project. Now I need your intent.
+Please answer all 5 questions:
+
+Q1. GOAL: What did you want this agent to achieve?
+
+Q2. AUDIENCE: Who will use this?
+    (developer / end-user / enterprise team)
+
+Q3. CRITICAL ACTION: What is the most dangerous
+    thing this agent can do?
+
+Q4. SUCCESS: How do you define success for this agent?
+
+Q5. KNOWN GAPS: What do you already know is
+    missing or broken?
+
+Reply in this exact format:
+A1: ...
+A2: ...
+A3: ...
+A4: ...
+A5: ...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+""",
+      'status': 'pending'
+    }
+  )
+)] role='user'
+    custom_metadata: None
+    error_code: None
+    error_message: None
+    finish_reason: None
+    go_away: None
+    grounding_metadata: None
+    id: 887e2092-d9e3-4b5b-89d7-ce36c50ed8fa
+    input_transcription: None
+    interaction_id: None
+    interrupted: None
+    invocation_id: e-5767a39d-3f89-4cb4-be50-1643d8c7ba94
+    isolation_scope: None
+    live_session_id: None
+    live_session_resumption_update: None
+    logprobs_result: None
+    long_running_tool_ids: None
+    message: parts=[Part(
+  function_response=FunctionResponse(
+    id='call_interview',
+    name='request_intent_interview',
+    response={
+      'message': """
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  INTENT INTERVIEW — Human-in-the-Loop Gate
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+I've analysed your project. Now I need your intent.
+Please answer all 5 questions:
+
+Q1. GOAL: What did you want this agent to achieve?
+
+Q2. AUDIENCE: Who will use this?
+    (developer / end-user / enterprise team)
+
+Q3. CRITICAL ACTION: What is the most dangerous
+    thing this agent can do?
+
+Q4. SUCCESS: How do you define success for this agent?
+
+Q5. KNOWN GAPS: What do you already know is
+    missing or broken?
+
+Reply in this exact format:
+A1: ...
+A2: ...
+A3: ...
+A4: ...
+A5: ...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+""",
+      'status': 'pending'
+    }
+  )
+)] role='user'
+    model_computed_fields: {}
+    model_config: {'extra': 'ignore', 'alias_generator': <function to_camel at 0x0000024EDF3C1800>, 'populate_by_name': True, 'validate_by_alias': True, 'validate_by_name': True, 'ser_json_bytes': 'base64', 'val_json_bytes': 'base64'}
+    model_extra: None
+    model_fields: {'model_version': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='modelVersion', alias_priority=1), 'content': FieldInfo(annotation=Union[Content, NoneType], required=False, default=None, alias='content', alias_priority=1), 'grounding_metadata': FieldInfo(annotation=Union[GroundingMetadata, NoneType], required=False, default=None, alias='groundingMetadata', alias_priority=1), 'partial': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='partial', alias_priority=1), 'turn_complete': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='turnComplete', alias_priority=1), 'finish_reason': FieldInfo(annotation=Union[FinishReason, NoneType], required=False, default=None, alias='finishReason', alias_priority=1), 'error_code': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorCode', alias_priority=1), 'error_message': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorMessage', alias_priority=1), 'interrupted': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='interrupted', alias_priority=1), 'custom_metadata': FieldInfo(annotation=Union[dict[str, Any], NoneType], required=False, default=None, alias='customMetadata', alias_priority=1), 'usage_metadata': FieldInfo(annotation=Union[GenerateContentResponseUsageMetadata, NoneType], required=False, default=None, alias='usageMetadata', alias_priority=1), 'live_session_resumption_update': FieldInfo(annotation=Union[LiveServerSessionResumptionUpdate, NoneType], required=False, default=None, alias='liveSessionResumptionUpdate', alias_priority=1), 'live_session_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='liveSessionId', alias_priority=1), 'go_away': FieldInfo(annotation=Union[LiveServerGoAway, NoneType], required=False, default=None, alias='goAway', alias_priority=1), 'input_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='inputTranscription', alias_priority=1), 'output_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='outputTranscription', alias_priority=1), 'avg_logprobs': FieldInfo(annotation=Union[float, NoneType], required=False, default=None, alias='avgLogprobs', alias_priority=1), 'logprobs_result': FieldInfo(annotation=Union[LogprobsResult, NoneType], required=False, default=None, alias='logprobsResult', alias_priority=1), 'cache_metadata': FieldInfo(annotation=Union[CacheMetadata, NoneType], required=False, default=None, alias='cacheMetadata', alias_priority=1), 'citation_metadata': FieldInfo(annotation=Union[CitationMetadata, NoneType], required=False, default=None, alias='citationMetadata', alias_priority=1), 'interaction_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='interactionId', alias_priority=1), 'invocation_id': FieldInfo(annotation=str, required=False, default='', alias='invocationId', alias_priority=1), 'author': FieldInfo(annotation=str, required=False, default='', alias='author', alias_priority=1), 'actions': FieldInfo(annotation=EventActions, required=False, default_factory=EventActions, alias='actions', alias_priority=1), 'output': FieldInfo(annotation=Union[Any, NoneType], required=False, default=None, alias='output', alias_priority=1), 'node_info': FieldInfo(annotation=NodeInfo, required=False, default_factory=NodeInfo, alias='nodeInfo', alias_priority=1), 'long_running_tool_ids': FieldInfo(annotation=Union[set[str], NoneType], required=False, default=None, alias='longRunningToolIds', alias_priority=1), 'branch': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='branch', alias_priority=1), 'isolation_scope': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='isolationScope', alias_priority=1), 'id': FieldInfo(annotation=str, required=False, default='', alias='id', alias_priority=1), 'timestamp': FieldInfo(annotation=float, required=False, default_factory=<lambda>, alias='timestamp', alias_priority=1)}
+    model_fields_set: {'content', 'actions', 'invocation_id', 'author', 'branch', 'id'}
+    model_version: None
+    node_info: path='app@1' output_for=None message_as_output=None
+    node_name: app
+    output: None
+    output_transcription: None
+    partial: None
+    timestamp: 1782983636.0142112
+    turn_complete: None
+    usage_metadata: None
+
+--- Event 4: <class 'google.adk.events.event.Event'> ---
+  content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'intent_answers': 'A1: Goal...',
+      'project_input': 'Please run deep audit on my agent'
+    },
+    id='call_generate_report',
+    name='generate_spec_and_report'
+  )
+)] role='model'
+  finish_reason: FinishReason.STOP
+  long_running_tool_ids: set()
+    actions: skip_summarization=None state_delta={} artifact_delta={} transfer_to_agent=None escalate=None requested_auth_configs={} requested_tool_confirmations={} compaction=None end_of_agent=None agent_state=None rewind_before_invocation_id=None route=None render_ui_widgets=None set_model_response=None
+    author: app
+    avg_logprobs: None
+    branch: None
+    cache_metadata: None
+    citation_metadata: None
+    content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'intent_answers': 'A1: Goal...',
+      'project_input': 'Please run deep audit on my agent'
+    },
+    id='call_generate_report',
+    name='generate_spec_and_report'
+  )
+)] role='model'
+    custom_metadata: None
+    error_code: None
+    error_message: None
+    finish_reason: FinishReason.STOP
+    go_away: None
+    grounding_metadata: None
+    id: bfd16639-0084-45b6-8944-14f5b0e0bc7b
+    input_transcription: None
+    interaction_id: None
+    interrupted: None
+    invocation_id: e-5767a39d-3f89-4cb4-be50-1643d8c7ba94
+    isolation_scope: None
+    live_session_id: None
+    live_session_resumption_update: None
+    logprobs_result: None
+    long_running_tool_ids: set()
+    message: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'intent_answers': 'A1: Goal...',
+      'project_input': 'Please run deep audit on my agent'
+    },
+    id='call_generate_report',
+    name='generate_spec_and_report'
+  )
+)] role='model'
+    model_computed_fields: {}
+    model_config: {'extra': 'ignore', 'alias_generator': <function to_camel at 0x0000024EDF3C1800>, 'populate_by_name': True, 'validate_by_alias': True, 'validate_by_name': True, 'ser_json_bytes': 'base64', 'val_json_bytes': 'base64'}
+    model_extra: None
+    model_fields: {'model_version': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='modelVersion', alias_priority=1), 'content': FieldInfo(annotation=Union[Content, NoneType], required=False, default=None, alias='content', alias_priority=1), 'grounding_metadata': FieldInfo(annotation=Union[GroundingMetadata, NoneType], required=False, default=None, alias='groundingMetadata', alias_priority=1), 'partial': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='partial', alias_priority=1), 'turn_complete': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='turnComplete', alias_priority=1), 'finish_reason': FieldInfo(annotation=Union[FinishReason, NoneType], required=False, default=None, alias='finishReason', alias_priority=1), 'error_code': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorCode', alias_priority=1), 'error_message': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorMessage', alias_priority=1), 'interrupted': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='interrupted', alias_priority=1), 'custom_metadata': FieldInfo(annotation=Union[dict[str, Any], NoneType], required=False, default=None, alias='customMetadata', alias_priority=1), 'usage_metadata': FieldInfo(annotation=Union[GenerateContentResponseUsageMetadata, NoneType], required=False, default=None, alias='usageMetadata', alias_priority=1), 'live_session_resumption_update': FieldInfo(annotation=Union[LiveServerSessionResumptionUpdate, NoneType], required=False, default=None, alias='liveSessionResumptionUpdate', alias_priority=1), 'live_session_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='liveSessionId', alias_priority=1), 'go_away': FieldInfo(annotation=Union[LiveServerGoAway, NoneType], required=False, default=None, alias='goAway', alias_priority=1), 'input_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='inputTranscription', alias_priority=1), 'output_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='outputTranscription', alias_priority=1), 'avg_logprobs': FieldInfo(annotation=Union[float, NoneType], required=False, default=None, alias='avgLogprobs', alias_priority=1), 'logprobs_result': FieldInfo(annotation=Union[LogprobsResult, NoneType], required=False, default=None, alias='logprobsResult', alias_priority=1), 'cache_metadata': FieldInfo(annotation=Union[CacheMetadata, NoneType], required=False, default=None, alias='cacheMetadata', alias_priority=1), 'citation_metadata': FieldInfo(annotation=Union[CitationMetadata, NoneType], required=False, default=None, alias='citationMetadata', alias_priority=1), 'interaction_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='interactionId', alias_priority=1), 'invocation_id': FieldInfo(annotation=str, required=False, default='', alias='invocationId', alias_priority=1), 'author': FieldInfo(annotation=str, required=False, default='', alias='author', alias_priority=1), 'actions': FieldInfo(annotation=EventActions, required=False, default_factory=EventActions, alias='actions', alias_priority=1), 'output': FieldInfo(annotation=Union[Any, NoneType], required=False, default=None, alias='output', alias_priority=1), 'node_info': FieldInfo(annotation=NodeInfo, required=False, default_factory=NodeInfo, alias='nodeInfo', alias_priority=1), 'long_running_tool_ids': FieldInfo(annotation=Union[set[str], NoneType], required=False, default=None, alias='longRunningToolIds', alias_priority=1), 'branch': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='branch', alias_priority=1), 'isolation_scope': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='isolationScope', alias_priority=1), 'id': FieldInfo(annotation=str, required=False, default='', alias='id', alias_priority=1), 'timestamp': FieldInfo(annotation=float, required=False, default_factory=<lambda>, alias='timestamp', alias_priority=1)}
+    model_fields_set: {'content', 'actions', 'long_running_tool_ids', 'invocation_id', 'author', 'partial', 'timestamp', 'finish_reason', 'id', 'branch', 'node_info'}
+    model_version: None
+    node_info: path='app@1' output_for=None message_as_output=None
+    node_name: app
+    output: None
+    output_transcription: None
+    partial: False
+    timestamp: 1782983636.024358
+    turn_complete: None
+    usage_metadata: None
+
+--- Event 5: <class 'google.adk.events.event.Event'> ---
+  content: parts=[Part(
+  function_response=FunctionResponse(
+    id='call_generate_report',
+    name='generate_spec_and_report',
+    response={
+      'result': """
+# Vibe-to-Spec Report
+
+## Project
+Please run deep audit on my agent
+
+## Builder Intent (from interview)
+A1: Goal...
+
+---
+[Full SPEC.md, Gap Report, and Eval Rubric will be generated
+ by Gemini based on your project and intent answers above]
+"""
+    }
+  )
+)] role='user'
+  finish_reason: None
+  long_running_tool_ids: None
+    actions: skip_summarization=None state_delta={} artifact_delta={} transfer_to_agent=None escalate=None requested_auth_configs={} requested_tool_confirmations={} compaction=None end_of_agent=None agent_state=None rewind_before_invocation_id=None route=None render_ui_widgets=None set_model_response=None
+    author: app
+    avg_logprobs: None
+    branch: None
+    cache_metadata: None
+    citation_metadata: None
+    content: parts=[Part(
+  function_response=FunctionResponse(
+    id='call_generate_report',
+    name='generate_spec_and_report',
+    response={
+      'result': """
+# Vibe-to-Spec Report
+
+## Project
+Please run deep audit on my agent
+
+## Builder Intent (from interview)
+A1: Goal...
+
+---
+[Full SPEC.md, Gap Report, and Eval Rubric will be generated
+ by Gemini based on your project and intent answers above]
+"""
+    }
+  )
+)] role='user'
+    custom_metadata: None
+    error_code: None
+    error_message: None
+    finish_reason: None
+    go_away: None
+    grounding_metadata: None
+    id: 94f32526-94fe-4274-8ed1-92a20762db66
+    input_transcription: None
+    interaction_id: None
+    interrupted: None
+    invocation_id: e-5767a39d-3f89-4cb4-be50-1643d8c7ba94
+    isolation_scope: None
+    live_session_id: None
+    live_session_resumption_update: None
+    logprobs_result: None
+    long_running_tool_ids: None
+    message: parts=[Part(
+  function_response=FunctionResponse(
+    id='call_generate_report',
+    name='generate_spec_and_report',
+    response={
+      'result': """
+# Vibe-to-Spec Report
+
+## Project
+Please run deep audit on my agent
+
+## Builder Intent (from interview)
+A1: Goal...
+
+---
+[Full SPEC.md, Gap Report, and Eval Rubric will be generated
+ by Gemini based on your project and intent answers above]
+"""
+    }
+  )
+)] role='user'
+    model_computed_fields: {}
+    model_config: {'extra': 'ignore', 'alias_generator': <function to_camel at 0x0000024EDF3C1800>, 'populate_by_name': True, 'validate_by_alias': True, 'validate_by_name': True, 'ser_json_bytes': 'base64', 'val_json_bytes': 'base64'}
+    model_extra: None
+    model_fields: {'model_version': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='modelVersion', alias_priority=1), 'content': FieldInfo(annotation=Union[Content, NoneType], required=False, default=None, alias='content', alias_priority=1), 'grounding_metadata': FieldInfo(annotation=Union[GroundingMetadata, NoneType], required=False, default=None, alias='groundingMetadata', alias_priority=1), 'partial': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='partial', alias_priority=1), 'turn_complete': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='turnComplete', alias_priority=1), 'finish_reason': FieldInfo(annotation=Union[FinishReason, NoneType], required=False, default=None, alias='finishReason', alias_priority=1), 'error_code': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorCode', alias_priority=1), 'error_message': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorMessage', alias_priority=1), 'interrupted': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='interrupted', alias_priority=1), 'custom_metadata': FieldInfo(annotation=Union[dict[str, Any], NoneType], required=False, default=None, alias='customMetadata', alias_priority=1), 'usage_metadata': FieldInfo(annotation=Union[GenerateContentResponseUsageMetadata, NoneType], required=False, default=None, alias='usageMetadata', alias_priority=1), 'live_session_resumption_update': FieldInfo(annotation=Union[LiveServerSessionResumptionUpdate, NoneType], required=False, default=None, alias='liveSessionResumptionUpdate', alias_priority=1), 'live_session_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='liveSessionId', alias_priority=1), 'go_away': FieldInfo(annotation=Union[LiveServerGoAway, NoneType], required=False, default=None, alias='goAway', alias_priority=1), 'input_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='inputTranscription', alias_priority=1), 'output_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='outputTranscription', alias_priority=1), 'avg_logprobs': FieldInfo(annotation=Union[float, NoneType], required=False, default=None, alias='avgLogprobs', alias_priority=1), 'logprobs_result': FieldInfo(annotation=Union[LogprobsResult, NoneType], required=False, default=None, alias='logprobsResult', alias_priority=1), 'cache_metadata': FieldInfo(annotation=Union[CacheMetadata, NoneType], required=False, default=None, alias='cacheMetadata', alias_priority=1), 'citation_metadata': FieldInfo(annotation=Union[CitationMetadata, NoneType], required=False, default=None, alias='citationMetadata', alias_priority=1), 'interaction_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='interactionId', alias_priority=1), 'invocation_id': FieldInfo(annotation=str, required=False, default='', alias='invocationId', alias_priority=1), 'author': FieldInfo(annotation=str, required=False, default='', alias='author', alias_priority=1), 'actions': FieldInfo(annotation=EventActions, required=False, default_factory=EventActions, alias='actions', alias_priority=1), 'output': FieldInfo(annotation=Union[Any, NoneType], required=False, default=None, alias='output', alias_priority=1), 'node_info': FieldInfo(annotation=NodeInfo, required=False, default_factory=NodeInfo, alias='nodeInfo', alias_priority=1), 'long_running_tool_ids': FieldInfo(annotation=Union[set[str], NoneType], required=False, default=None, alias='longRunningToolIds', alias_priority=1), 'branch': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='branch', alias_priority=1), 'isolation_scope': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='isolationScope', alias_priority=1), 'id': FieldInfo(annotation=str, required=False, default='', alias='id', alias_priority=1), 'timestamp': FieldInfo(annotation=float, required=False, default_factory=<lambda>, alias='timestamp', alias_priority=1)}
+    model_fields_set: {'content', 'actions', 'invocation_id', 'author', 'branch', 'id'}
+    model_version: None
+    node_info: path='app@1' output_for=None message_as_output=None
+    node_name: app
+    output: None
+    output_transcription: None
+    partial: None
+    timestamp: 1782983636.0266593
+    turn_complete: None
+    usage_metadata: None
+
+--- Event 6: <class 'google.adk.events.event.Event'> ---
+  content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'eval_rubric_content': """# EVAL_RUBRIC.md
+Dummy Eval Rubric""",
+      'gap_report_content': """# GAP_REPORT.md
+Dummy Gap Report""",
+      'repo_name_or_url': 'Please run deep audit on my agent',
+      'spec_content': """# SPEC.md
+Dummy Spec"""
+    },
+    id='call_save_deep_report',
+    name='save_deep_audit_report'
+  )
+)] role='model'
+  finish_reason: FinishReason.STOP
+  long_running_tool_ids: set()
+    actions: skip_summarization=None state_delta={} artifact_delta={} transfer_to_agent=None escalate=None requested_auth_configs={} requested_tool_confirmations={} compaction=None end_of_agent=None agent_state=None rewind_before_invocation_id=None route=None render_ui_widgets=None set_model_response=None
+    author: app
+    avg_logprobs: None
+    branch: None
+    cache_metadata: None
+    citation_metadata: None
+    content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'eval_rubric_content': """# EVAL_RUBRIC.md
+Dummy Eval Rubric""",
+      'gap_report_content': """# GAP_REPORT.md
+Dummy Gap Report""",
+      'repo_name_or_url': 'Please run deep audit on my agent',
+      'spec_content': """# SPEC.md
+Dummy Spec"""
+    },
+    id='call_save_deep_report',
+    name='save_deep_audit_report'
+  )
+)] role='model'
+    custom_metadata: None
+    error_code: None
+    error_message: None
+    finish_reason: FinishReason.STOP
+    go_away: None
+    grounding_metadata: None
+    id: 9e04e98e-1bd0-49b8-b860-f2041bfb1455
+    input_transcription: None
+    interaction_id: None
+    interrupted: None
+    invocation_id: e-5767a39d-3f89-4cb4-be50-1643d8c7ba94
+    isolation_scope: None
+    live_session_id: None
+    live_session_resumption_update: None
+    logprobs_result: None
+    long_running_tool_ids: set()
+    message: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'eval_rubric_content': """# EVAL_RUBRIC.md
+Dummy Eval Rubric""",
+      'gap_report_content': """# GAP_REPORT.md
+Dummy Gap Report""",
+      'repo_name_or_url': 'Please run deep audit on my agent',
+      'spec_content': """# SPEC.md
+Dummy Spec"""
+    },
+    id='call_save_deep_report',
+    name='save_deep_audit_report'
+  )
+)] role='model'
+    model_computed_fields: {}
+    model_config: {'extra': 'ignore', 'alias_generator': <function to_camel at 0x0000024EDF3C1800>, 'populate_by_name': True, 'validate_by_alias': True, 'validate_by_name': True, 'ser_json_bytes': 'base64', 'val_json_bytes': 'base64'}
+    model_extra: None
+    model_fields: {'model_version': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='modelVersion', alias_priority=1), 'content': FieldInfo(annotation=Union[Content, NoneType], required=False, default=None, alias='content', alias_priority=1), 'grounding_metadata': FieldInfo(annotation=Union[GroundingMetadata, NoneType], required=False, default=None, alias='groundingMetadata', alias_priority=1), 'partial': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='partial', alias_priority=1), 'turn_complete': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='turnComplete', alias_priority=1), 'finish_reason': FieldInfo(annotation=Union[FinishReason, NoneType], required=False, default=None, alias='finishReason', alias_priority=1), 'error_code': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorCode', alias_priority=1), 'error_message': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorMessage', alias_priority=1), 'interrupted': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='interrupted', alias_priority=1), 'custom_metadata': FieldInfo(annotation=Union[dict[str, Any], NoneType], required=False, default=None, alias='customMetadata', alias_priority=1), 'usage_metadata': FieldInfo(annotation=Union[GenerateContentResponseUsageMetadata, NoneType], required=False, default=None, alias='usageMetadata', alias_priority=1), 'live_session_resumption_update': FieldInfo(annotation=Union[LiveServerSessionResumptionUpdate, NoneType], required=False, default=None, alias='liveSessionResumptionUpdate', alias_priority=1), 'live_session_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='liveSessionId', alias_priority=1), 'go_away': FieldInfo(annotation=Union[LiveServerGoAway, NoneType], required=False, default=None, alias='goAway', alias_priority=1), 'input_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='inputTranscription', alias_priority=1), 'output_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='outputTranscription', alias_priority=1), 'avg_logprobs': FieldInfo(annotation=Union[float, NoneType], required=False, default=None, alias='avgLogprobs', alias_priority=1), 'logprobs_result': FieldInfo(annotation=Union[LogprobsResult, NoneType], required=False, default=None, alias='logprobsResult', alias_priority=1), 'cache_metadata': FieldInfo(annotation=Union[CacheMetadata, NoneType], required=False, default=None, alias='cacheMetadata', alias_priority=1), 'citation_metadata': FieldInfo(annotation=Union[CitationMetadata, NoneType], required=False, default=None, alias='citationMetadata', alias_priority=1), 'interaction_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='interactionId', alias_priority=1), 'invocation_id': FieldInfo(annotation=str, required=False, default='', alias='invocationId', alias_priority=1), 'author': FieldInfo(annotation=str, required=False, default='', alias='author', alias_priority=1), 'actions': FieldInfo(annotation=EventActions, required=False, default_factory=EventActions, alias='actions', alias_priority=1), 'output': FieldInfo(annotation=Union[Any, NoneType], required=False, default=None, alias='output', alias_priority=1), 'node_info': FieldInfo(annotation=NodeInfo, required=False, default_factory=NodeInfo, alias='nodeInfo', alias_priority=1), 'long_running_tool_ids': FieldInfo(annotation=Union[set[str], NoneType], required=False, default=None, alias='longRunningToolIds', alias_priority=1), 'branch': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='branch', alias_priority=1), 'isolation_scope': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='isolationScope', alias_priority=1), 'id': FieldInfo(annotation=str, required=False, default='', alias='id', alias_priority=1), 'timestamp': FieldInfo(annotation=float, required=False, default_factory=<lambda>, alias='timestamp', alias_priority=1)}
+    model_fields_set: {'content', 'actions', 'long_running_tool_ids', 'invocation_id', 'author', 'partial', 'timestamp', 'finish_reason', 'id', 'branch', 'node_info'}
+    model_version: None
+    node_info: path='app@1' output_for=None message_as_output=None
+    node_name: app
+    output: None
+    output_transcription: None
+    partial: False
+    timestamp: 1782983636.0370524
+    turn_complete: None
+    usage_metadata: None
+
+--- Event 7: <class 'google.adk.events.event.Event'> ---
+  content: parts=[Part(
+  function_response=FunctionResponse(
+    id='call_save_deep_report',
+    name='save_deep_audit_report',
+    response={
+      'result': 'Success: Deep Audit reports have been successfully saved to audit_reports\\deep_audit as separate files.'
+    }
+  )
+)] role='user'
+  finish_reason: None
+  long_running_tool_ids: None
+    actions: skip_summarization=None state_delta={} artifact_delta={} transfer_to_agent=None escalate=None requested_auth_configs={} requested_tool_confirmations={} compaction=None end_of_agent=None agent_state=None rewind_before_invocation_id=None route=None render_ui_widgets=None set_model_response=None
+    author: app
+    avg_logprobs: None
+    branch: None
+    cache_metadata: None
+    citation_metadata: None
+    content: parts=[Part(
+  function_response=FunctionResponse(
+    id='call_save_deep_report',
+    name='save_deep_audit_report',
+    response={
+      'result': 'Success: Deep Audit reports have been successfully saved to audit_reports\\deep_audit as separate files.'
+    }
+  )
+)] role='user'
+    custom_metadata: None
+    error_code: None
+    error_message: None
+    finish_reason: None
+    go_away: None
+    grounding_metadata: None
+    id: 5c6b78d0-a31a-4cb5-b5c7-6a18c5c1fbf6
+    input_transcription: None
+    interaction_id: None
+    interrupted: None
+    invocation_id: e-5767a39d-3f89-4cb4-be50-1643d8c7ba94
+    isolation_scope: None
+    live_session_id: None
+    live_session_resumption_update: None
+    logprobs_result: None
+    long_running_tool_ids: None
+    message: parts=[Part(
+  function_response=FunctionResponse(
+    id='call_save_deep_report',
+    name='save_deep_audit_report',
+    response={
+      'result': 'Success: Deep Audit reports have been successfully saved to audit_reports\\deep_audit as separate files.'
+    }
+  )
+)] role='user'
+    model_computed_fields: {}
+    model_config: {'extra': 'ignore', 'alias_generator': <function to_camel at 0x0000024EDF3C1800>, 'populate_by_name': True, 'validate_by_alias': True, 'validate_by_name': True, 'ser_json_bytes': 'base64', 'val_json_bytes': 'base64'}
+    model_extra: None
+    model_fields: {'model_version': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='modelVersion', alias_priority=1), 'content': FieldInfo(annotation=Union[Content, NoneType], required=False, default=None, alias='content', alias_priority=1), 'grounding_metadata': FieldInfo(annotation=Union[GroundingMetadata, NoneType], required=False, default=None, alias='groundingMetadata', alias_priority=1), 'partial': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='partial', alias_priority=1), 'turn_complete': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='turnComplete', alias_priority=1), 'finish_reason': FieldInfo(annotation=Union[FinishReason, NoneType], required=False, default=None, alias='finishReason', alias_priority=1), 'error_code': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorCode', alias_priority=1), 'error_message': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorMessage', alias_priority=1), 'interrupted': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='interrupted', alias_priority=1), 'custom_metadata': FieldInfo(annotation=Union[dict[str, Any], NoneType], required=False, default=None, alias='customMetadata', alias_priority=1), 'usage_metadata': FieldInfo(annotation=Union[GenerateContentResponseUsageMetadata, NoneType], required=False, default=None, alias='usageMetadata', alias_priority=1), 'live_session_resumption_update': FieldInfo(annotation=Union[LiveServerSessionResumptionUpdate, NoneType], required=False, default=None, alias='liveSessionResumptionUpdate', alias_priority=1), 'live_session_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='liveSessionId', alias_priority=1), 'go_away': FieldInfo(annotation=Union[LiveServerGoAway, NoneType], required=False, default=None, alias='goAway', alias_priority=1), 'input_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='inputTranscription', alias_priority=1), 'output_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='outputTranscription', alias_priority=1), 'avg_logprobs': FieldInfo(annotation=Union[float, NoneType], required=False, default=None, alias='avgLogprobs', alias_priority=1), 'logprobs_result': FieldInfo(annotation=Union[LogprobsResult, NoneType], required=False, default=None, alias='logprobsResult', alias_priority=1), 'cache_metadata': FieldInfo(annotation=Union[CacheMetadata, NoneType], required=False, default=None, alias='cacheMetadata', alias_priority=1), 'citation_metadata': FieldInfo(annotation=Union[CitationMetadata, NoneType], required=False, default=None, alias='citationMetadata', alias_priority=1), 'interaction_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='interactionId', alias_priority=1), 'invocation_id': FieldInfo(annotation=str, required=False, default='', alias='invocationId', alias_priority=1), 'author': FieldInfo(annotation=str, required=False, default='', alias='author', alias_priority=1), 'actions': FieldInfo(annotation=EventActions, required=False, default_factory=EventActions, alias='actions', alias_priority=1), 'output': FieldInfo(annotation=Union[Any, NoneType], required=False, default=None, alias='output', alias_priority=1), 'node_info': FieldInfo(annotation=NodeInfo, required=False, default_factory=NodeInfo, alias='nodeInfo', alias_priority=1), 'long_running_tool_ids': FieldInfo(annotation=Union[set[str], NoneType], required=False, default=None, alias='longRunningToolIds', alias_priority=1), 'branch': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='branch', alias_priority=1), 'isolation_scope': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='isolationScope', alias_priority=1), 'id': FieldInfo(annotation=str, required=False, default='', alias='id', alias_priority=1), 'timestamp': FieldInfo(annotation=float, required=False, default_factory=<lambda>, alias='timestamp', alias_priority=1)}
+    model_fields_set: {'content', 'actions', 'invocation_id', 'author', 'branch', 'id'}
+    model_version: None
+    node_info: path='app@1' output_for=None message_as_output=None
+    node_name: app
+    output: None
+    output_transcription: None
+    partial: None
+    timestamp: 1782983636.0422435
+    turn_complete: None
+    usage_metadata: None
+
+--- Event 8: <class 'google.adk.events.event.Event'> ---
+  content: parts=[Part(
+  text='Deep Audit report generated.'
+)] role='model'
+  finish_reason: FinishReason.STOP
+  long_running_tool_ids: None
+    actions: skip_summarization=None state_delta={} artifact_delta={} transfer_to_agent=None escalate=None requested_auth_configs={} requested_tool_confirmations={} compaction=None end_of_agent=None agent_state=None rewind_before_invocation_id=None route=None render_ui_widgets=None set_model_response=None
+    author: app
+    avg_logprobs: None
+    branch: None
+    cache_metadata: None
+    citation_metadata: None
+    content: parts=[Part(
+  text='Deep Audit report generated.'
+)] role='model'
+    custom_metadata: None
+    error_code: None
+    error_message: None
+    finish_reason: FinishReason.STOP
+    go_away: None
+    grounding_metadata: None
+    id: 517a47d9-926e-408d-932d-73c8e8a14126
+    input_transcription: None
+    interaction_id: None
+    interrupted: None
+    invocation_id: e-5767a39d-3f89-4cb4-be50-1643d8c7ba94
+    isolation_scope: None
+    live_session_id: None
+    live_session_resumption_update: None
+    logprobs_result: None
+    long_running_tool_ids: None
+    message: parts=[Part(
+  text='Deep Audit report generated.'
+)] role='model'
+    model_computed_fields: {}
+    model_config: {'extra': 'ignore', 'alias_generator': <function to_camel at 0x0000024EDF3C1800>, 'populate_by_name': True, 'validate_by_alias': True, 'validate_by_name': True, 'ser_json_bytes': 'base64', 'val_json_bytes': 'base64'}
+    model_extra: None
+    model_fields: {'model_version': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='modelVersion', alias_priority=1), 'content': FieldInfo(annotation=Union[Content, NoneType], required=False, default=None, alias='content', alias_priority=1), 'grounding_metadata': FieldInfo(annotation=Union[GroundingMetadata, NoneType], required=False, default=None, alias='groundingMetadata', alias_priority=1), 'partial': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='partial', alias_priority=1), 'turn_complete': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='turnComplete', alias_priority=1), 'finish_reason': FieldInfo(annotation=Union[FinishReason, NoneType], required=False, default=None, alias='finishReason', alias_priority=1), 'error_code': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorCode', alias_priority=1), 'error_message': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='errorMessage', alias_priority=1), 'interrupted': FieldInfo(annotation=Union[bool, NoneType], required=False, default=None, alias='interrupted', alias_priority=1), 'custom_metadata': FieldInfo(annotation=Union[dict[str, Any], NoneType], required=False, default=None, alias='customMetadata', alias_priority=1), 'usage_metadata': FieldInfo(annotation=Union[GenerateContentResponseUsageMetadata, NoneType], required=False, default=None, alias='usageMetadata', alias_priority=1), 'live_session_resumption_update': FieldInfo(annotation=Union[LiveServerSessionResumptionUpdate, NoneType], required=False, default=None, alias='liveSessionResumptionUpdate', alias_priority=1), 'live_session_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='liveSessionId', alias_priority=1), 'go_away': FieldInfo(annotation=Union[LiveServerGoAway, NoneType], required=False, default=None, alias='goAway', alias_priority=1), 'input_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='inputTranscription', alias_priority=1), 'output_transcription': FieldInfo(annotation=Union[Transcription, NoneType], required=False, default=None, alias='outputTranscription', alias_priority=1), 'avg_logprobs': FieldInfo(annotation=Union[float, NoneType], required=False, default=None, alias='avgLogprobs', alias_priority=1), 'logprobs_result': FieldInfo(annotation=Union[LogprobsResult, NoneType], required=False, default=None, alias='logprobsResult', alias_priority=1), 'cache_metadata': FieldInfo(annotation=Union[CacheMetadata, NoneType], required=False, default=None, alias='cacheMetadata', alias_priority=1), 'citation_metadata': FieldInfo(annotation=Union[CitationMetadata, NoneType], required=False, default=None, alias='citationMetadata', alias_priority=1), 'interaction_id': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='interactionId', alias_priority=1), 'invocation_id': FieldInfo(annotation=str, required=False, default='', alias='invocationId', alias_priority=1), 'author': FieldInfo(annotation=str, required=False, default='', alias='author', alias_priority=1), 'actions': FieldInfo(annotation=EventActions, required=False, default_factory=EventActions, alias='actions', alias_priority=1), 'output': FieldInfo(annotation=Union[Any, NoneType], required=False, default=None, alias='output', alias_priority=1), 'node_info': FieldInfo(annotation=NodeInfo, required=False, default_factory=NodeInfo, alias='nodeInfo', alias_priority=1), 'long_running_tool_ids': FieldInfo(annotation=Union[set[str], NoneType], required=False, default=None, alias='longRunningToolIds', alias_priority=1), 'branch': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='branch', alias_priority=1), 'isolation_scope': FieldInfo(annotation=Union[str, NoneType], required=False, default=None, alias='isolationScope', alias_priority=1), 'id': FieldInfo(annotation=str, required=False, default='', alias='id', alias_priority=1), 'timestamp': FieldInfo(annotation=float, required=False, default_factory=<lambda>, alias='timestamp', alias_priority=1)}
+    model_fields_set: {'content', 'actions', 'invocation_id', 'author', 'partial', 'timestamp', 'finish_reason', 'id', 'branch', 'node_info'}
+    model_version: None
+    node_info: path='app@1' output_for=None message_as_output=None
+    node_name: app
+    output: None
+    output_transcription: None
+    partial: False
+    timestamp: 1782983636.0553067
+    turn_complete: None
+    usage_metadata: None
