@@ -62,7 +62,7 @@ The agent operates in two distinct modes depending on your input.
 * **Trigger**: Paste any public GitHub URL directly into the chat prompt.
 * **Example**:
   ```text
-  https://github.com/google-gemini/gemini-api-cookbook
+  https://github.com/google-gemini/gemini-cli
   ```
 * **Output**: Writes a findings report to:
   `audit_reports/quick_scan/{repo}_{date}_scan.md`
@@ -87,8 +87,7 @@ The agent operates in two distinct modes depending on your input.
 ## MCP Server
 
 The standalone Model Context Protocol (MCP) server runs automatically on **port 8081** via `start.bat`.
-* It exposes the `read_github_repo` tool as an MCP endpoint.
-* If the MCP server is shut down or offline, the agent gracefully falls back to the local tool execution method so audits remain operational.
+* It exposes the `read_github_repo` tool as an MCP endpoint to fetch and parse repository contents.
 
 ---
 
@@ -119,10 +118,8 @@ graph TD
     User([User Client]) -->|Web / A2A Interface| ADKApp[ADK Web Server: Port 8080]
     ADKApp -->|ReAct Flow| Agent[AKS009432 Agent]
     Agent -->|Dual Model Manager| LLM[Gemini 2.5 / OpenAI GPT]
-    Agent -->|Get Tools| DualSource[DualToolSource Fallback Router]
-    DualSource -->|Option 1: SSE| MCPServer[MCP Server: Port 8081]
-    DualSource -->|Option 2: Local Fallback| LocalTool[Local read_github_repo Tool]
-    MCPServer -->|Tool Execution| LocalTool
+    Agent -->|Tool Source Connection| MCPServer[MCP Server: Port 8081]
+    MCPServer -->|Tool Execution| GitHub[(GitHub API)]
     Agent -->|Save Audit Artifacts| Reports[audit_reports/ Folder]
 ```
 
