@@ -50,7 +50,7 @@ This script starts:
 2. The **ADK Web Server** in the foreground on port `8080`.
 
 Open your browser to:
-**[http://127.0.0.1:8080/dev-ui/?app=AKS009432](http://127.0.0.1:8080/dev-ui/?app=AKS009432)**
+**[http://127.0.0.1:8080/dev-ui/?app=app](http://127.0.0.1:8080/dev-ui/?app=app)**
 
 ---
 

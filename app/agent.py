@@ -216,6 +216,27 @@ def extract_repo_name(repo_name_or_url: str) -> str:
     return "project"
 
 
+def get_project_root() -> str:
+    # Try process CWD first. If it contains pyproject.toml, it's the project root.
+    cwd = os.getcwd()
+    res = cwd
+    if os.path.exists(os.path.join(cwd, "pyproject.toml")):
+        res = cwd
+    else:
+        res = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    
+    try:
+        import sys
+        sys.stderr.write(f"[DEBUG PATHS] CWD: {cwd}\n")
+        sys.stderr.write(f"[DEBUG PATHS] __file__: {__file__}\n")
+        sys.stderr.write(f"[DEBUG PATHS] pyproject.toml in CWD: {os.path.exists(os.path.join(cwd, 'pyproject.toml'))}\n")
+        sys.stderr.write(f"[DEBUG PATHS] Resolved: {res}\n")
+        sys.stderr.write("-" * 50 + "\n")
+    except Exception:
+        pass
+    return res
+
+
 def save_report(repo_name_or_url: str, report_content: str) -> str:
     """Saves the generated Quick Scan findings report to a markdown file inside the audit_reports/quick_scan folder.
 
@@ -230,7 +251,8 @@ def save_report(repo_name_or_url: str, report_content: str) -> str:
         repo_name = extract_repo_name(repo_name_or_url)
         ddmmyy = datetime.datetime.now().strftime("%d%m%y")
         
-        folder = os.path.join("audit_reports", "quick_scan")
+        project_root = get_project_root()
+        folder = os.path.join(project_root, "audit_reports", "quick_scan")
         os.makedirs(folder, exist_ok=True)
         
         filename = f"{repo_name}_{ddmmyy}_scan.md"
@@ -259,7 +281,8 @@ def save_deep_audit_report(repo_name_or_url: str, spec_content: str, gap_report_
         repo_name = extract_repo_name(repo_name_or_url)
         ddmmyy = datetime.datetime.now().strftime("%d%m%y")
         
-        folder = os.path.join("audit_reports", "deep_audit")
+        project_root = get_project_root()
+        folder = os.path.join(project_root, "audit_reports", "deep_audit")
         os.makedirs(folder, exist_ok=True)
         
         spec_path = os.path.join(folder, f"{repo_name}_{ddmmyy}_spec.md")
@@ -378,17 +401,24 @@ You are the Vibe-to-Spec Agent. Analyze the user's input to automatically determ
        - What it means in plain English
        - Real-world exploit scenario
        - Affected file and location (with path and line numbers)
-  4. Call save_report() with the user's GitHub URL and the generated findings to write them to audit_reports/quick_scan folder.
-  5. Present a summary of the report to the user and confirm it has been saved.
+  4. You MUST call save_report() with the user's GitHub URL and the generated findings to write them to the audit_reports/quick_scan folder. Do NOT output the findings text to the user yet.
+  5. Once save_report() returns success, present a short summary of the findings to the user and confirm the file path where the report was saved.
 
 - MODE 2: Deep Audit (Triggered when the user explicitly says "deep audit", "deep", or provides a plain description/text input instead of a GitHub URL).
   1. If a GitHub URL is provided in the query, call read_github_repo() first, then call read_project() with the user's input. Otherwise, call read_project() with the user's input.
-  2. Call request_intent_interview() and WAIT for A1-A5 answers.
+  2. First, in a text-only turn (WITHOUT calling any tools), you MUST print the following 5 questions verbatim in your text response to the user so they are displayed on their screen:
+     Q1. GOAL: What did you want this agent to achieve?
+     Q2. AUDIENCE: Who will use this? (developer / end-user / enterprise team)
+     Q3. CRITICAL ACTION: What is the most dangerous thing this agent can do?
+     Q4. SUCCESS: How do you define success for this agent?
+     Q5. KNOWN GAPS: What do you already know is missing or broken?
+     Then, in the immediate next turn, call request_intent_interview() to pause the execution and wait for the A1-A5 answers.
   3. Using the project summary + intent answers, directly generate the full content for the following documents:
      * SPEC.md (a living specification of the agent mapping intent vs implementation)
      * GAP_REPORT.md (list of gaps citing specific filenames and line-level evidence, set risk tier as LOW/MEDIUM/HIGH/CRITICAL, and security flags including permissions, sandboxing, dependencies, and observability)
      * EVAL_RUBRIC.md (evaluation rubric with 3 test cases, 3 trajectory checks, and a final verdict)
-  4. Call save_deep_audit_report() as the final mandatory step to save all three files (SPEC.md, GAP_REPORT.md, and EVAL_RUBRIC.md content) to the audit_reports/deep_audit folder. Keep the contents of the files separate and call save_deep_audit_report with the user's input/url as the first argument, followed by the SPEC.md content, the GAP_REPORT.md content, and the EVAL_RUBRIC.md content.
+  4. You MUST call save_deep_audit_report() as a mandatory step to save all three files (SPEC.md, GAP_REPORT.md, and EVAL_RUBRIC.md content) to the audit_reports/deep_audit folder. Keep the contents of the files separate. Do NOT print the full contents of these files in the text response yet.
+  5. Once save_deep_audit_report() returns success, present a summary of the audit to the user and confirm that the reports have been saved in the audit_reports/deep_audit folder.
 
 Never skip the interview in Deep Audit mode. Never mark risk tier as LOW if a critical action has no approval gate.
 """,
@@ -403,5 +433,5 @@ Never skip the interview in Deep Audit mode. Never mark risk tier as LOW if a cr
 
 app = App(
     root_agent=root_agent,
-    name="AKS009432",
+    name="app",
 )
